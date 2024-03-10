@@ -1,41 +1,26 @@
-import type { MetaFunction } from "@remix-run/node";
+import Blog from "~/components/Blog";
+import CallToAction from "~/components/CallToAction";
+import Features from "~/components/Features";
+import Footer from "~/components/Footer";
+import Header from "~/components/Header";
+import HeroSection from "~/components/HeroSection";
+import Stats from "~/components/Stats";
+import Testimonials from "~/components/Testimonials";
+// import Layout from "~/layouts/Layout";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+const Page = () => (
+  <>
+    <Header />
+    <main className="space-y-40 mb-40">
+      <HeroSection />
+      <Features />
+      <Stats />
+      <Testimonials />
+      <CallToAction />
+      <Blog />
+    </main>
+    <Footer />
+  </>
+);
 
-export default function Index() {
-  return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
-}
+export default Page;
