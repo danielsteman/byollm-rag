@@ -21,10 +21,10 @@ function Header() {
               >
                 <div aria-hidden="true" className="flex space-x-1">
                   <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                  <div className="h-6 w-2 bg-primary"></div>
+                  <div className="h-6 w-2 bg-primary-500"></div>
                 </div>
                 <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Astrolus
+                  byollm
                 </span>
               </a>
               <div className="relative flex items-center lg:hidden max-h-10">

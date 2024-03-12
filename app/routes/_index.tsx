@@ -6,7 +6,6 @@ import Header from "~/components/Header";
 import HeroSection from "~/components/HeroSection";
 import Stats from "~/components/Stats";
 import Testimonials from "~/components/Testimonials";
-// import Layout from "~/layouts/Layout";
 
 const Page = () => (
   <>
