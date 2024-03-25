@@ -19,7 +19,7 @@ const Login = () => (
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
             Sign in to your account
           </h1>
-          <form className="space-y-4 md:space-y-6" action="#">
+          <Form className="space-y-4 md:space-y-6" action="#">
             <div>
               <label
                 htmlFor="email"
@@ -85,7 +85,7 @@ const Login = () => (
             >
               Sign in
             </button>
-          </form>
+          </Form>
           <Form action="/auth/github" method="post">
             <button
               type="submit"

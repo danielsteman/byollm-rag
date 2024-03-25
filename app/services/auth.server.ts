@@ -1,4 +1,3 @@
-// app/services/auth.server.ts
 import { Authenticator } from "remix-auth";
 import { sessionStorage } from "./session.server";
 import { GitHubStrategy } from "remix-auth-github";
