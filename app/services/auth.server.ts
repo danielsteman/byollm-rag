@@ -19,6 +19,10 @@ const gitHubStrategy = new GitHubStrategy(
   async ({ accessToken, extraParams, profile }) => {
     // Get the user data from your DB or API using the tokens and profile
     // return User.findOrCreate({ email: profile.emails[0].value });
+    console.log(accessToken);
+    console.log(extraParams);
+    console.log(profile);
+
     const user: User = { token: "abc" };
     return user;
   }
